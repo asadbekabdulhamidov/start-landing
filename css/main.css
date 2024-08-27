@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1205px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+/* header styles  */
+.header {
+  background-color: #74c69d;
+  padding-bottom: 8rem;
+}
+
+.sitenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem 0;
+  margin-bottom: 4rem;
+}
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.sitenav__link a {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+
+  line-height: 125%;
+}
+.sitenav__link {
+  position: relative;
+  padding-bottom: 1rem;
+}
+.menu {
+  display: none;
+}
+.sitenav__link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #ffffff;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+.sitenav__link:hover::before {
+  width: 100%;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.hero__content {
+  width: 416px;
+}
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 5px;
+  margin-bottom: 1.5rem;
+}
+.section__title {
+  font-family: "Crimson Text";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 1.5rem;
+}
+.text {
+  font-size: 1.5rem;
+  line-height: 125%;
+  margin-bottom: 2.5rem;
+}
+.btn {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  line-height: 125%;
+  padding: 1.3rem 4.7rem;
+  border-radius: 5px;
+  border: none;
+  background: rgb(255, 255, 255);
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
+}
+
+.hero .btn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+/* header styles end */
+
+/* portfolio styles  */
+.portfolio {
+  padding: 8rem 0;
+}
+
+.portfolio__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio__img {
+  width: 600px;
+}
+.portfolio__intro {
+  width: 470px;
+}
+
+.portfolio__intro .text {
+  margin-bottom: 0;
+  margin-bottom: 1.6rem;
+}
+
+.section__btn {
+  background-color: #000;
+  color: white;
+  border: 2px solid black;
+  transition: all 0.3s linear;
+}
+
+.section__btn:hover {
+  background: transparent;
+  color: #000;
+}
+
+/* portfolio styles end */
+
+/* services styles */
+
+.services__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services__intro {
+  width: 470px;
+}
+
+.services__intro .text {
+  margin: 0;
+  margin-bottom: 1.6rem;
+}
+
+/* services styles end */
+
+/* section talents */
+.talents {
+  padding: 5.4rem 0;
+}
+
+.talents__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.talents__intro {
+  width: 404px;
+  margin-bottom: 10.7rem;
+  text-align: center;
+}
+.talents__intro .subtitle {
+  color: rgb(116, 198, 157);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 5px;
+}
+
+.talents__cards {
+  display: flex;
+  gap: 4.7rem;
+  flex-wrap: wrap;
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 255, 255);
+  padding: 2rem 3.8rem;
+  transition: all 0.3s linear;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card__img {
+  width: 175px;
+  margin-bottom: 1.9rem;
+}
+.card__title {
+  margin-bottom: 1.7rem;
+  color: rgb(33, 37, 41);
+  font-family: "Crimson Text";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 125%;
+}
+.job {
+  color: rgba(33, 37, 41, 0.75);
+  font-size: 1.5rem;
+  line-height: 125%;
+}
+/* section talents end */
+
+/* footer  */
+.footer {
+  padding: 5rem 0;
+  background-color: #74c69d;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__socials {
+  display: flex;
+  gap: 2rem;
+}
+.footer__socials a {
+  color: white;
+  font-size: 2rem;
+  transition: all 0.3s linear;
+}
+.footer__socials a:hover {
+  color: orange;
+  font-size: 2rem;
+  transform: scale(1.2);
+}
+
+.footer__design p {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  line-height: 125%;
+}
+/* footer end */
+
+/* rwd */
+
+@media (max-width: 1150px) {
+  .hero__img {
+    width: 500px;
+  }
+  .portfolio__img {
+    width: 480px;
+  }
+  .services__img {
+    width: 400px;
+  }
+
+  .talents__cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero__content {
+    width: 380px;
+  }
+  .portfolio__container {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: block;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .sitenav__list {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero__img {
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .hero__content {
+    width: 100%;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .hero__content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio__intro {
+    width: 90%;
+  }
+  .services__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4rem;
+  }
+  .services__intro {
+    width: 90%;
+  }
+  .talents__intro {
+    margin-bottom: 5rem;
+  }
+  .footer__container {
+    flex-direction: column;
+    /* gap: 3rem; */
+  }
+  .footer__socials {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero__img,
+  .portfolio__img,
+  .services__img,
+  .talents__intro {
+    width: 90%;
+  }
+}
